@@ -16,8 +16,9 @@ Intended to develop webapps while using modern web technologies like composer an
 
 ##### Because WordPress is a dependency itself!
 
-We need tools to bring WordPress development to the modern age.
-To take advantage of modern tools like autoloading, package and dependency management.
+* We need tools to bring WordPress development to the modern age.
+* A nice alternative to git submodules.
+* Take advantage of modern tools like autoloading, package and dependency management.
 
 ## Instructions
 
