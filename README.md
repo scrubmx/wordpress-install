@@ -59,13 +59,13 @@ The project files are organized like so:
 webapp
     |-- app
     |    |-- config
-    |    |    '-- wordpress.php    ⇐ Place all your configurations here.
+    |    |    `-- wordpress.php    ⇐ Place all your configurations here.
     |    |
     |    |-- content
     |    |    |-- plugins          ⇐ WordPress plugins directory.
-    |    |    '-- themes           ⇐ WordPress themes directory.
+    |    |    `-- themes           ⇐ WordPress themes directory.
     |    |
-    |    '-- tests
+    |    `-- tests
     |
     |-- .gitignore                 ⇐ Exclude wordpress core and vendor directories.
     |-- .htaccess                  ⇐ Boilerplate htaccess for pretty permalinks.
@@ -74,7 +74,7 @@ webapp
     |-- phpunit.xml
     |-- vendor
     |-- wordpress                  ⇐ WordPress core files.
-    '-- wp-config.php
+    `-- wp-config.php
 
 ```
 
