@@ -1,0 +1,35 @@
+# Default Charset
+AddDefaultCharset utf-8
+
+# Protect wp-config.php
+<files wp-config.php>
+	order allow,deny
+	deny from all
+</files>
+
+#
+# htaccess template
+# Note that the last RewriteRule points to wordpress/index.php
+# Sometimes when you save permalink structure from dashboard this can get messed up
+#
+# <IfModule mod_rewrite.c>
+#    RewriteEngine On
+#    RewriteBase /
+#    RewriteRule ^index\.php$ - [L]
+#    RewriteCond %{REQUEST_FILENAME} !-f
+#    RewriteCond %{REQUEST_FILENAME} !-d
+#    RewriteRule . /wordpress/index.php [L]
+# </IfModule>
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+

@@ -1,0 +1,47 @@
+{
+	"name": "scrubmx/wordpress-install",
+	"description": "Install wordpress trough composer, so much win!",
+	"keywords": ["install", "framework", "wordpress", "composer"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Jorge González",
+			"email": "scrub.mx@gmail.com"
+		}
+	],
+	"autoload": {
+		"files": [
+			"app/content/themes/base-theme/inc/helpers.php",
+			"app/content/themes/base-theme/inc/ajax-functions.php"
+		]
+	},
+	"repositories": [
+		{
+			"type": "package",
+			"package": {
+				"name": "wordpress/wordpress",
+				"type": "webroot",
+				"version": "dev-master",
+				"dist": {
+					"type": "tar",
+					"url": "http://wordpress.org/latest.tar.gz"
+				},
+				"require": {
+					"fancyguy/webroot-installer": "1.0.0"
+				}
+			}
+		}
+	],
+	"require":{
+		"php": ">=5.4.0",
+		"wordpress/wordpress": "dev-master"
+	},
+	"config": {
+		"bin-dir": "bin/",
+		"process-timeout": 1000
+	},
+	"extra": {
+		"webroot-dir": "wordpress",
+		"webroot-package": "wordpress/wordpress"
+	}
+}
