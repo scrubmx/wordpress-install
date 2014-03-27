@@ -24,7 +24,7 @@ To take advantage of modern tools like autoloading, package and dependency manag
 * First clone this repository.
 
 ```bash
-git clone git@github/scrubmx/wordpress-install.com webapp
+git clone git@github.com:scrubmx/wordpress-install.git webapp
 ```
 
 * Then just  cd into your **webapp** directory and run:
