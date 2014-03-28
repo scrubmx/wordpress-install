@@ -12,6 +12,7 @@ define( 'WP_HOME', 'http://example.com' );
 
 define( 'WP_SITEURL',  WP_HOME . '/wordpress' );
 
+
 /*
  |---------------------------------------------------------------
  | Path to the root of the aplication.
@@ -19,7 +20,8 @@ define( 'WP_SITEURL',  WP_HOME . '/wordpress' );
  |
  */
 define('APP_ROOT', dirname(__FILE__));
-error_reporting(E_ALL); ini_set('display_errors', 1);
+
+
 /*
  |---------------------------------------------------------------
  | Moving wp-content directory.
@@ -29,13 +31,15 @@ define( 'WP_CONTENT_DIR', APP_ROOT . '/app/content' );
 
 define( 'WP_CONTENT_URL', WP_HOME . '/app/content' );
 
+
 /*
  |---------------------------------------------------------------
  | Change default theme
  |---------------------------------------------------------------
  */
 if ( ! defined('WP_DEFAULT_THEME') )
-		define( 'WP_DEFAULT_THEME', 'base-theme' );
+	define( 'WP_DEFAULT_THEME', 'base-theme' );
+
 
 /*
  |---------------------------------------------------------------
@@ -56,6 +60,7 @@ if ( ! defined('ABSPATH') )
  */
 define('ENVIRONMENT', getenv('APP_ENV'));
 
+
 /*
  |---------------------------------------------------------------
  | Load WordPress configuration file.
@@ -72,6 +77,7 @@ else
 {
 	require_once APP_ROOT . '/app/config/wordpress.php';
 }
+
 
 /*
 |--------------------------------------------------------------------------
