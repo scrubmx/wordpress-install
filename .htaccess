@@ -13,7 +13,7 @@ AddDefaultCharset utf-8
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
-RewriteRule ^wp-content/?.*$ - [L]
+RewriteRule ^wp-admin\/?.*$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule /wordpress/wp-admin [L]
 </IfModule>
