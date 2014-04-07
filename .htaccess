@@ -8,6 +8,17 @@ AddDefaultCharset utf-8
 </files>
 
 #
+# Redirect /wp-admin to /wordpress/wp-admin automatically
+#
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^wp-content/?.*$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule /wordpress/wp-admin [L]
+</IfModule>
+
+#
 # htaccess template
 # Note that the last RewriteRule points to wordpress/index.php
 # Sometimes when you save permalink structure from dashboard this can get messed up
