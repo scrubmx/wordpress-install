@@ -1,8 +1,9 @@
 {
 	"name": "scrubmx/wordpress-install",
-	"description": "Install wordpress trough composer, so much win!",
-	"keywords": ["install", "framework", "wordpress", "composer"],
+	"description": "Install wordpress trough composer",
+	"keywords": ["install", "wordpress", "framework", "composer"],
 	"license": "MIT",
+	"type": "project",
 	"authors": [
 		{
 			"name": "Jorge González",
@@ -36,8 +37,10 @@
 		"php": ">=5.4.0",
 		"wordpress/wordpress": "dev-master"
 	},
+	"require-dev": {
+	        "phpunit/phpunit": "~4.0"
+	},
 	"config": {
-		"bin-dir": "bin/",
 		"process-timeout": 1000
 	},
 	"extra": {
