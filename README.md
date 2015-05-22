@@ -58,24 +58,24 @@ The project files are organized like so:
 
 ```bash
 webapp
-    |-- app
-    |    |-- config
-    |    |    `-- wordpress.php    ⇐ Place all your configurations here.
+    ├── app
+    |    ├── config
+    |    |    └── wordpress.php    ⇐ Place all your configurations here.
     |    |
-    |    |-- content
-    |    |    |-- plugins          ⇐ WordPress plugins directory.
-    |    |    `-- themes           ⇐ WordPress themes directory.
+    |    ├── content
+    |    |    ├── plugins          ⇐ WordPress plugins directory.
+    |    |    └── themes           ⇐ WordPress themes directory.
     |    |
-    |    `-- tests
+    |    └── tests
     |
-    |-- .gitignore                 ⇐ Exclude wordpress core and vendor directories.
-    |-- .htaccess                  ⇐ Boilerplate htaccess for pretty permalinks.
-    |-- composer.json
-    |-- index.php
-    |-- phpunit.xml
-    |-- vendor
-    |-- wordpress                  ⇐ WordPress core files.
-    `-- wp-config.php
+    ├── .gitignore                 ⇐ Exclude wordpress core and vendor directories.
+    ├── .htaccess                  ⇐ Boilerplate htaccess for pretty permalinks.
+    ├── composer.json
+    ├── index.php
+    ├── phpunit.xml
+    ├── vendor
+    ├── wordpress                  ⇐ WordPress core files.
+    └── wp-config.php
 
 ```
 
