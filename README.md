@@ -25,7 +25,7 @@ Intended to develop webapps while using modern web technologies like composer an
 * First clone this repository.
 
 ```bash
-git clone git@github.com:scrubmx/wordpress-install.git webapp
+[sudo] git clone https://github.com/scrubmx/wordpress-install.git webapp
 ```
 
 * Then just  cd into your **webapp** directory and run:
