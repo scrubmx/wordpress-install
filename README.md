@@ -22,16 +22,12 @@ Intended to develop webapps while using modern web technologies like composer an
 
 ## Instructions
 
-* First clone this repository.
+* First clone this repository and run composer install.
 
 ```bash
-[sudo] git clone https://github.com/scrubmx/wordpress-install.git webapp
-```
-
-* Then just  cd into your **webapp** directory and run:
-
-```bash
-[sudo] composer install
+git clone https://github.com/scrubmx/wordpress-install.git webapp
+cd webapp
+composer install
 ```
 
 * Set the WP_HOME in the root **wp-config.php** file.
