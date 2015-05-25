@@ -20,6 +20,7 @@ Intended to develop webapps while using modern web technologies like composer an
 * A nice alternative to git submodules.
 * Take advantage of modern tools like autoloading, package and dependency management.
 
+
 ## Instructions
 
 * First clone this repository and run composer install.
@@ -27,16 +28,15 @@ Intended to develop webapps while using modern web technologies like composer an
 ```bash
 git clone https://github.com/scrubmx/wordpress-install.git webapp
 cd webapp
-composer install
+sudo composer install
 ```
 
-* Set the WP_HOME in the root **wp-config.php** file.
+* Then set the WP_HOME in the **wp-config.php** file.
 `Don't forget to include the 'http://' and no trailing slash.`
 
 ```php
 define( 'WP_HOME', 'http://example.com' );
 ```
-
 
 * Finally set your database credentials in the **app/config/wordpress.php** file.
 
@@ -85,4 +85,3 @@ webapp
 ## License
 
 Open sourced software under the [MIT license](http://opensource.org/licenses/MIT)
-
