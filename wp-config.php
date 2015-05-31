@@ -8,6 +8,7 @@
  | IMPORTANT: Set WP_HOME to the full path including the 'http://' and no trailing slash.
  |
  */
+ 
 define( 'WP_HOME', 'http://example.com' );
 
 define( 'WP_SITEURL',  WP_HOME . '/wordpress' );
@@ -19,6 +20,7 @@ define( 'WP_SITEURL',  WP_HOME . '/wordpress' );
  |---------------------------------------------------------------
  |
  */
+ 
 define('APP_ROOT', dirname(__FILE__));
 
 
@@ -27,6 +29,7 @@ define('APP_ROOT', dirname(__FILE__));
  | Moving wp-content directory.
  |---------------------------------------------------------------
  */
+ 
 define( 'WP_CONTENT_DIR', APP_ROOT . '/app/content' );
 
 define( 'WP_CONTENT_URL', WP_HOME . '/app/content' );
@@ -37,6 +40,7 @@ define( 'WP_CONTENT_URL', WP_HOME . '/app/content' );
  | Change default theme
  |---------------------------------------------------------------
  */
+ 
 if ( ! defined('WP_DEFAULT_THEME') )
 	define( 'WP_DEFAULT_THEME', 'base-theme' );
 
@@ -46,6 +50,7 @@ if ( ! defined('WP_DEFAULT_THEME') )
  | Absolute path to the WordPress directory.
  |---------------------------------------------------------------
  */
+ 
 if ( ! defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/wordpress/');
 
@@ -58,6 +63,7 @@ if ( ! defined('ABSPATH') )
  | You can load different configurations depending on your current environment.
  |
  */
+ 
 define('ENVIRONMENT', getenv('APP_ENV'));
 
 
@@ -66,15 +72,14 @@ define('ENVIRONMENT', getenv('APP_ENV'));
  | Load WordPress configuration file.
  |---------------------------------------------------------------
  */
-if ( defined('ENVIRONMENT') )
-{
-	if ( file_exists(APP_ROOT . '/app/config/'. ENVIRONMENT . '/wordpress.php') )
+ 
+if ( defined('ENVIRONMENT') ) {
+	if ( file_exists(APP_ROOT . '/app/config/'. ENVIRONMENT . '/wordpress.php') ) {
 		require_once APP_ROOT . '/app/config/'. ENVIRONMENT . '/wordpress.php';
-	else
+	} else {
 		require_once APP_ROOT . '/app/config/wordpress.php';
-}
-else
-{
+	}
+} else {
 	require_once APP_ROOT . '/app/config/wordpress.php';
 }
 
@@ -84,4 +89,5 @@ else
 | Register The Composer Auto Loader
 |--------------------------------------------------------------------------
 */
+
 require APP_ROOT . '/vendor/autoload.php';
